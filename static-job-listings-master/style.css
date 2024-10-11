@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "leagues";
+  src: url(League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --coloritem: hsl(180, 8%, 52%);
+  --colorrole: hsl(180, 14%, 20%);
+  --colorcategorie: hsl(180, 29%, 50%);
+}
+body {
+  background-color: hsl(180, 52%, 96%);
+  font-size: 15px;
+  overflow-x: hidden;
+  font-family: "leagues";
+}
+main {
+  width: 100%;
+}
+header {
+  width: 100%;
+}
+header img {
+  width: 100%;
+  background-color: hsl(180, 29%, 50%);
+}
+a:active,
+a:visited {
+  color: inherit;
+}
+.container {
+  width: 1044px;
+  margin: 0 auto;
+}
+.main_content {
+  margin-top: 60px;
+}
+.job_list {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px hsla(180, 8%, 52%, 13%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  border-left: 3px solid var(--colorcategorie);
+  margin-bottom: 25px;
+}
+.job {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.details_head {
+  display: flex;
+  gap: 20px;
+}
+.details_tag {
+  display: flex;
+  gap: 20px;
+}
+h4 {
+  color: var(--colorcategorie);
+}
+.details_head button {
+  background-color: var(--colorcategorie);
+  border: none;
+  border-radius: 10px;
+  font-size: 10px;
+  padding: 5px;
+  color: #fff;
+}
+.details_head .btn {
+  background-color: var(--colorrole);
+}
+h3 {
+  color: var(--colorrole);
+  cursor: pointer;
+}
+h3:hover {
+  color: hsl(180, 29%, 50%);
+}
+.details_tag {
+  color: var(--coloritem);
+}
+ul {
+  display: flex;
+  gap: 30px;
+}
+ul li {
+  list-style: none;
+  color: var(--colorcategorie);
+  background-color: hsl(180, 52%, 96%);
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ul{
+  display: flex;
+  gap: 10px;
+}
+.li_list{
+  display: flex;
+}
+.close{
+  background-color: hsl(180, 29%, 50%);
+  border:none;
+  padding:0 10px;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.close:hover{
+  background-color: #000;
+}
+a {
+  text-decoration: none;
+}
+.list li:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: #fff;
+}
+.filter {
+  position: absolute;
+  bottom: 101%;
+  width: 995px;
+  border-left: none;
+}
+li button:hover {
+  background-color: var(--colorrole);
+  color: #fff;
+}
+.clean a {
+  background-color: inherit;
+}
+.clean a:hover {
+  color: hsl(180, 29%, 50%);
+  text-decoration: underline;
+}
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 1440px) {
+  header {
+    width: 100%;
+  }
+  header img {
+    width: 100%;
+  }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .job_list {
+    flex-wrap: wrap;
+  }
+  .filter{
+    max-width: 94%;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    width: 100%;
+  }
+  .desk {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  header .mobile {
+    width: 100%;
+  }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .job_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 0;
+    margin-bottom: 40px;
+  }
+  .job {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .image {
+    margin-top: -25px;
+  }
+  .list {
+    border-top: 1px solid var(--coloritem);
+    padding-top: 30px;
+  }
+  .list ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .details_head {
+    align-items: center;
+  }
+  .filter{
+    width: 80%;
+    left: 0;
+    right: 0;
+  }
+}
